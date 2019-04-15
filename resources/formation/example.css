@@ -1,0 +1,29 @@
+/* police du texte de toute la page */
+body{
+    text-align:center;
+    font-family : Monospace
+}
+
+/* fond gris pour le titre */
+.header{
+    padding: 5px 0px 5px 0px;
+    margin: 5px 0px 20px 0px;
+    background-color:#f5f5f5;
+    font-size: 15pt;
+}
+
+/* coller les cases du tableau et centrer */
+.maTableStylisee{
+     border-collapse: collapse;
+     margin:auto;
+}
+/* créer les lignes du tableau */
+.maTableStylisee, th, td{
+     border: 1px solid gray;
+     padding:10px 50px 10px 50px;
+}
+
+/* passage de la souris sur une ligne la grise */
+.maTableStylisee tr:hover{
+    background-color:#f5f5f5;
+}
