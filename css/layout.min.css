@@ -25,21 +25,17 @@ color: black;
 letter-spacing: 5px;
 }
 .box-shadow{
-border:solid 1px #bfbfbf;border-radius:2px;box-shadow: 5px 5px 0px #d8d8d8;
-margin:8px;
-height:250px;
+    width: 175px;
+    height: 270px;
+    border:solid 1px #bfbfbf;border-radius:2px;box-shadow: 5px 5px 0px #d8d8d8;
 }
-@media only screen and (max-device-width: 480px){
-    .box-shadow{
-       font-size :5px;
-    }
-}
+
 .box-shadow:hover{
     border:solid 0.5px #bfbfbf;;border-radius:2px;box-shadow: 4px 2px 0px #bfbfbf;
-
 }
 img{
-margin-top: 5px;
+    max-width: 100%;
+    padding: 2px;
 }
 
 /*class="wow zoomIn" data-wow-duration=".3" data-wow-delay=".1s"*/
