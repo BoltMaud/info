@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>STIN-BPA-2019</title>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta content="width=device-width, initial-scale=1" name="viewport"/>
+    <meta content="" name="description"/>
+    <meta content="" name="author"/>
+
+    <!-- GLOBAL MANDATORY STYLES -->
+    <link href="../../../vendor/simple-line-icons/simple-line-icons.min.css" rel="stylesheet" type="text/css"/>
+    <link href="../../../vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet" type="text/css"/>
+
+    <!-- PAGE LEVEL PLUGIN STYLES -->
+    <link href="../../../css/animate.css" rel="stylesheet">
+    <link href="../../../vendor/swiper/css/swiper.min.css" rel="stylesheet" type="text/css"/>
+
+    <!-- THEME STYLES -->
+    <link href="../../../css/layout.min.css" rel="stylesheet" type="text/css"/>
+
+    <!-- Favicon -->
+</head>
+<body>
+<div class="bg-color-sky-light">
+    <div class="content-md container">
+
+        <div class="row margin-b-40">
+            <div class="col-sm-12">
+                <h2>TD2 Business Process Analytics </h2>
+                <p> Université Paris Dauphine - M2 STIN, 2019</p>
+            </div>
+
+        </div>
+
+        <div class="row margin-b-40">
+            <div class="col-sm-12">
+                <div class="section-seperator">
+                </div>
+            </div>
+        </div>
+
+
+        <div class="row margin-b-40">
+            <div class="col-sm-12">
+                <h4>Objectifs du TD</h4>
+                <ul>
+                    <li>Manipuler les arbres de processus (process trees)</li>
+                    <li>Utiliser l'inductive miner</li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="row margin-b-40">
+            <div class="col-sm-12">
+                <h4>Exercice 1</h4>
+                <img src="arbre2.png"/>
+                Construisez le réseau de Petri correspondant.
+            </div>
+        </div>
+        <div class="row margin-b-40">
+            <div class="col-sm-12">
+                <h4>Exercice 2</h4>
+                L1 = { < A B C I O I O I >,
+              <  B A C U >,
+                <  C A B U >,
+                <  C B A I >}
+                <ol>
+                    <li>Construisez le DFG (directly-follows graph).</li>
+                    <li>A l'aide de l'inductive miner, déduisez l'arbre de processus</li>
+                    <li>Dessinez le réseaux de Petri correspondant</li>
+                </ol>
+            </div>
+        </div>
+
+
+        <div class="row margin-b-40">
+            <div class="col-sm-12">
+                <h4>Exercice 3</h4>
+                <h5>(a)</h5>
+                L2 = { < A B C D B D B G > ,
+                < A I G >,
+                < A C B D B G > } <br>
+                <ol>
+                    <li>Construisez le DFG (directly-follows graph).</li>
+                    <li>A l'aide de l'inductive miner, tentez de déduire l'arbre de processus (process tree).</li>
+                    <li>On est face à une situation où il n'existe pas de cut parmis ceux définis.
+                        En faisant une modification dans le DFG, deux cuts peuvent être considérés. Lesquels ? Lequel vous semble le plus approprié ?</li>
+                    <li>Quel est alors le réseau de Petri associé à cet arbre ?</li>
+                </ol>
+                <h5>(b)</h5>
+                L2 = { < A B C D B D B G ><sup>100</sup> ,
+                < A I G ><sup>2</sup>,
+                < A C B D B G ><sup>100</sup> } <br>
+                En considérant les fréquences d'apparitions des différentes variantes de séquences, on constate que la deuxième trace est
+                nettement plus rare et semble représenter un comportement déviant. Afin d'avoir un modèle à l'image de la plupart de nos traces
+                 nous introduisons une borne inférieure de fréquence de relation entre deux activités à 10.
+                <ol>
+                   <li>Construisez le DFG en considérant les fréquences des relations. Fixez une borne inférieur minimale de fréquences à 10. Quelles sont les modifications à considérer dans l'arbre de processus ?  </li>
+                </ol>
+
+            </div>
+        </div>
+
+        <div class="row margin-b-40">
+            <div class="col-sm-12">
+                <h4>Exercice 4</h4>
+                Considérer l'arbre de processus suivant.<br>
+                <img src="arbre1.png"/>
+                <ol>
+                    <li>Quel est le réseau de Petri associé ? </li>
+                    <li>Quels comportements sont parfaitement représentés par ce modèle ?</li>
+                    <li>On observe la séquence < I V A R O >. Quelle modification du réseau de Petri permet
+                    facilement d'accepter cette nouvelle séquence ? </li>
+                    <li>Expliquez pourquoi on ne peut pas aussi aisément modifier l'arbre de processus.</li>
+                </ol>
+            </div>
+        </div>
+
+        <div class="row margin-b-40">
+            <div class="col-sm-12">
+                <h4>Exercice 5</h4>
+                L3 = { < A B > , < A C B > }.<br>
+                <ol>
+                    <li>Déroulez l'inductive miner.</li>
+                    <li>Quel problème rencontrez-vous ? </li>
+                </ol>
+            </div>
+        </div>
+
+
+
+    </div>
+
+
+</div>
+</div>
+<style>
+       body,li {
+        color:black !important;
+            }
+        .log td{
+            padding:5px 10px 5px;
+            border : solid 0.5px;
+        }
+        .log{
+            margin:30px;
+        }
+    </style>
+
+<!-- Back To Top -->
+<a href="javascript:void(0);" class="js-back-to-top back-to-top">Top</a>
+
+<!-- JAVASCRIPTS(Load javascripts at bottom, this will reduce page load time) -->
+<!-- CORE PLUGINS -->
+<script src="../../../vendor/jquery.min.js" type="text/javascript"></script>
+<script src="../../../vendor/jquery-migrate.min.js" type="text/javascript"></script>
+<script src="../../../vendor/bootstrap/js/bootstrap.min.js" type="text/javascript"></script>
+
+<!-- PAGE LEVEL PLUGINS -->
+<script src="../../../vendor/jquery.easing.js" type="text/javascript"></script>
+<script src="../../../vendor/jquery.back-to-top.js" type="text/javascript"></script>
+<script src="../../../vendor/jquery.smooth-scroll.js" type="text/javascript"></script>
+<script src="../../../vendor/jquery.wow.min.js" type="text/javascript"></script>
+<script src="../../../vendor/swiper/js/swiper.jquery.min.js" type="text/javascript"></script>
+
+<!-- PAGE LEVEL SCRIPTS -->
+<script src="../../../js/layout.min.js" type="text/javascript"></script>
+<script src="../../../js/components/wow.min.js" type="text/javascript"></script>
+<script src="../../../js/components/swiper.min.js" type="text/javascript"></script>
+
+</body>
+</html>
