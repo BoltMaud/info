@@ -56,8 +56,8 @@
                     <div class="menu-container">
                         <ul class="navbar-nav navbar-nav-right">
                             <!-- Home -->
-                            <li class="nav-item active">
-                                <a class="nav-item-child " style="background: #f5f5f5;" href="index.html">
+                            <li class="nav-item">
+                                <a class="nav-item-child "  href="index.html">
                                     CV
                                 </a>
                             </li>
@@ -85,21 +85,83 @@
                     <!-- End Navbar Collapse -->
 
             <!-- Logo -->
-                </div>
-        </nav>
-        <!-- Navbar -->
+            <div class="container">
+
+                  <div class="navbar-logo">
+                      <h1 style="padding-bottom:0px;margin-top:20px;margin-bottom:0px">PhD Defense</h1>
+                      <h5 style="margin-bottom:0px;margin-top:0px"> Mathilde BOLTENHAGEN</h5>
+                  </div>
+              </div>
+                  </div>
+          </nav>
+          <!-- Navbar -->
     </header>    <!--========== END HEADER ==========-->
 
         <!--========== PAGE LAYOUT ==========-->
         <!-- Work -->
          <!-- About -->
-        <div class="content-md container">
-            <h5>Currently open to work.</h5>
+        <div class="content-md container" style="padding-top:0px">
+            <h4 style="margin-bottom:0px;margin-top:0px;  ">Title: </h4>
+            <p style="font-size:18px">Process Instance Clustering based on Conformance Checking Artefacts</p>
+            <!--// end row -->
+            <h4 style="margin-bottom:0px;margin-top:0px;  ">Date:</h4>
+            <p> 21rst October 2021 </p>
+            <h4 style="margin-bottom:0px;margin-top:0px;  ">Jury:</h4>
+            <ul>
+                <li>Marlon Dumas, University of Tartu, Reviewer </li>
+                <li>Jochen De Weerdt,  KU Leuven, Reviewer</li>
+                <li>Pascal Poizat,  Université Paris Nanterre, LIP6, Examiner</li>
+                <li>Fatiha Zaïdi,  Université Paris Saclay, Examiner</li>
+                <li>Marco Montali,  Free University of Bozen-Bolzano, Examiner</li>
+                <li>Thomas Chatain,  ENS Paris-Saclay, Advisor </li>
+                <li>Josep Carmona,  Universitat Politècnica de Catalunya, Advisor </li>
+            </ul>
+            <div class="row   " style="padding-top:10px;padding-bottom:60px;">
+                <div class="col-sm-12 sm-margin-b-50">
+                    <div class="margin-b-30">
+                        <h4 style="margin-bottom:0px;margin-top:0px">Abstract:</h4>
+                        <p>As event data becomes an ubiquitous source of information, data science techniques represent
+                        an unprecedented opportunity to analyze and react to the processes that generate
+                        this data. Process Mining is an emerging field that bridges the gap between traditional
+                        data analysis techniques, like Data Mining, and Business Process Management. One core
+                        value of Process Mining is the discovery of formal process models like Petri nets or BPMN
+                        models which attempt to make sense of the events recorded in logs. Due to the complexity
+                        of event data, automated process discovery algorithms tend to create dense process models
+                        which are hard to interpret by humans. Fortunately, Conformance Checking, a sub-field of
+                        Process Mining, enables relating observed and modeled behavior, so that humans can map
+                        these two pieces of process information. Conformance checking is possible through alignment
+                        artefacts which associate process models and event logs. Different types of alignment
+                        artefacts exist, namely alignments, multi-alignments and anti-alignments.
+                        Currently, only alignment artefacts are deeply addressed in the literature. It allows to
+                        relate the process model to a given process instance. However, because many behaviors
+                        exist in logs, identifying an alignment per process instance hinders the readability of the
+                            log-to-model relationships.</p>
+                        <p>The present thesis proposes to exploit the conformance checking artefacts for clustering
+                        the process executions recorded in event logs, thereby extracting a restrictive number
+                        of modeled representatives. Data clustering is a common method for extracting information
+                        from dense and complex data. By grouping objects by similarities into clusters,
+                        data clustering enables to mine simpler datasets which embrace the similarities and the
+                        differences contained in data. Using the conformance checking artefacts in a clustering
+                        approach allows to consider a reliable process model as a baseline for grouping the process
+                        instances. Hence, the discovered clusters are associated with modeled artefacts, that we
+                        call model-based trace variants, which provides opportune log-to-model explanations.
+                        From this motivation, we have elaborated a set of methods for computing conformance
+                        checking artefacts. The first contribution is the computation of a unique modeled behavior
+                        that represents of a set of process instances, namely multi-alignment. Then, we propose
+                        several alignment-based clustering approaches which provide clusters of process instances
+                        associated to a modeled artefact. Finally, we highlight the interest of anti-alignment for
+                        extracting deviations of process models with respect to the log. This latter artefact enables
+                        to estimate model precision, and we show its impact in model-based clustering. We provide
+                        SAT encoding for all the proposed techniques. Heuristic algorithms are then added to deal
+                            with computing capacity of today’s computers, at the expense of loosing optimality.</p>
+                    </div>
+            </div>
 
-            <img src="img/cur.png" style="box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);">
-            <h1></h1>
-            <h5>Reachable on Linkedin.</h5>
-        </div>
+            </div>
+            <!--// end row -->
+
+
+            </div>
 
         <!--========== FOOTER ==========-->
     <footer class="footer bg-f5" >
@@ -128,7 +190,6 @@
                 <div class="col-xs-2 text-center">
                 </div>
             </div>
-
             <!--// end row -->
         </div>
     </footer>
